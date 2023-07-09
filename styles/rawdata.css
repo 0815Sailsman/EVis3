@@ -1,0 +1,21 @@
+#plainlist {
+    border: 5px solid red;
+    width: 20%;
+    height: 85dvh;
+    font-size: 30px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+  
+#plainlist p {
+    min-height: 50px;
+    flex-shrink: 1;
+    margin: 0;
+}
+
+.dataimg {
+	max-width: 50px;
+	max-height: 50px;
+}
