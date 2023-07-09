@@ -15,6 +15,11 @@
     margin: 0;
 }
 
+#plainlist h2 {
+    text-align: center;
+    margin:5px;
+}
+
 .dataimg {
 	max-width: 50px;
 	max-height: 50px;

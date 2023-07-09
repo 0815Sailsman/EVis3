@@ -15,13 +15,17 @@
     <title>WebSocker Client</title>
     <script src="script.js"></script>
     <link href=' http://fonts.googleapis.com/css?family=JetBrains+Mono' rel='stylesheet' type='text/css'>
-</head>
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
+  </head>
  
 <body>
     <div id="container">
         <div class="rowcontainer">
           <div id="plainlist">
-          <h2 style="text-align: center;margin:5px">Raw data</h2>
+          <h2>Raw data</h2>
           </div>
         <div id="secdiv">
           <div id="graph">
