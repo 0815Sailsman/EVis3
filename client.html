@@ -15,6 +15,8 @@
     <title>WebSocker Client</title>
     <script src="script.js"></script>
     <link href=' http://fonts.googleapis.com/css?family=JetBrains+Mono' rel='stylesheet' type='text/css'>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script type="text/javascript" src="graph.js" defer></script>
     <script>
       /*to prevent Firefox FOUC, this must be here*/
       let FF_FOUC_FIX;
@@ -30,6 +32,9 @@
         <div id="secdiv">
           <div id="graph">
             <h2>Diagramm</h2>
+            <div id="graph_container">
+              <canvas id="actual_graph"></canvas>
+            </div>
           </div>
           <div id="thidiv">
             <div id="map">

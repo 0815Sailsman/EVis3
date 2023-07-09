@@ -1,4 +1,9 @@
 #graph {
     border: 5px solid blue;
     height: 50%;
-  }
+}
+
+#graph_container {
+  width: 100%;
+  height: 80%;
+}
