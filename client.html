@@ -13,10 +13,9 @@
     <link rel="stylesheet" href="styles/graph.css">
     <link rel="stylesheet" href="styles/robo3d.css">
     <title>WebSocker Client</title>
-    <script src="script.js"></script>
     <link href=' http://fonts.googleapis.com/css?family=JetBrains+Mono' rel='stylesheet' type='text/css'>
     <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
-    <script type="text/javascript" src="graph.js" defer></script>
+    <script src="script.js" defer></script>
     <script>
       /*to prevent Firefox FOUC, this must be here*/
       let FF_FOUC_FIX;
@@ -42,6 +41,7 @@
             </div>
             <div id="robo3d">
               <h2>Robo3d</h2>
+              <button onclick="addPoint();">click</button>
             </div>
           </div>
           </div>

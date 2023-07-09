@@ -36,3 +36,58 @@ function getTypeImg(type) {
 function sendInstruction(msg) {
 	socket.send(msg);
 }
+
+function createChart(data) {
+    return new Chart(
+      document.getElementById('actual_graph'),
+      {
+        data: {
+          labels: data.map(row => row.year),
+          datasets: [
+			{
+				type: 'bar',
+				label: 'Bar Dataset',
+				data: [10, 20, 30, 40, 50, 60, 70]
+			},
+            {
+				type: 'line',
+            	label: 'Acquisitions by year',
+            	data: data.map(row => row.count)
+            }
+          ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false
+        }
+      }
+    );
+};
+
+const data = [
+	{ year: 2010, count: 10 },
+	{ year: 2011, count: 20 },
+	{ year: 2012, count: 15 },
+	{ year: 2013, count: 25 },
+	{ year: 2014, count: 22 },
+	{ year: 2015, count: 30 },
+	{ year: 2016, count: 28 },
+  ];
+
+let chart = createChart(data);
+
+function addPoint() {
+	chart.data.labels.push("2017");
+    chart.data.datasets.forEach((dataset) => {
+		switch (dataset.label) {
+			case "Bar Dataset":
+				dataset.data.push(100);
+				break;
+			case "Acquisitions by year":
+				dataset.data.push(250);
+			default:
+				break;
+		}
+    });
+    chart.update();
+}
