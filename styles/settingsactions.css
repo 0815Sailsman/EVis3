@@ -1,10 +1,11 @@
 #settings {
     border: 5px solid yellow;
-    height: 10dvh;
+    height: calc(10vh);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    box-sizing: border-box;
 }
   
 #settings h1 {

@@ -3,18 +3,21 @@ body {
   background-color: black;
   font-family: 'JetBrains Mono', arial, serif;
   margin: 0;
+  min-height: 100dvh;
 }
 
 #container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  min-height: 100dvh;
 }
 
 .rowcontainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  min-height: 90dvh;
 }
 
 #secdiv {

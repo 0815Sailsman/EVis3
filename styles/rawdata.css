@@ -1,7 +1,7 @@
 #plainlist {
     border: 5px solid red;
     width: 20%;
-    height: 85dvh;
+    min-height: calc(90vh - 2*5px);
     font-size: 30px;
   
     display: flex;
